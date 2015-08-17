@@ -24,4 +24,5 @@ if(ftp_put($ftp_stream, $config['ftp']['remote_directory'].$dump_file, $config['
 }
 ftp_close($ftp_stream);
 
+echo "\n";
 ?>
