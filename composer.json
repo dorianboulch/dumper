@@ -1,0 +1,12 @@
+{
+    "name": "dorian/dumper",
+    "authors": [
+        {
+            "name": "Dorian Boulc'h",
+            "email": "dev.boulchdorian@gmail.com"
+        }
+    ],
+    "require": {
+        "ifsnop/mysqldump-php": "1.*"
+    }
+}
