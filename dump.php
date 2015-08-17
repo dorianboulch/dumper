@@ -1,22 +1,8 @@
 <?php
 require 'vendor/autoload.php';
-use Ifsnop\Mysqldump as IMysqldump;
+require 'config.php';
 
-$config = [
-  'mysql' => [
-    'database' => '',
-    'username' => '',
-    'password' => '',
-  ],
-  'ftp'   => [
-    'server'           => '',
-    'port'             => 21,
-    'user'             => '',
-    'password'         => '',
-    'remote_directory' => ''
-  ],
-  'local_directory' => 'dumps/'
-];
+use Ifsnop\Mysqldump as IMysqldump;
 
 $dump_file = date('Y-m-d_H-i-s') . '_' . $config['mysql']['database'] . '.sql';
 
